@@ -97,7 +97,7 @@ label{
 .photo {
   width: 100%;
   height: 300px;
-  padding-bottom: 56.25%; /* Relación de aspecto 16:9 (ajusta según tus necesidades) */
+  padding-bottom: 56.25%; 
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
