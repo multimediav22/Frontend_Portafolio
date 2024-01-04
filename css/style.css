@@ -98,7 +98,7 @@ label{
   width: 100%;
   height: 700px;
   position: relative;
-  background: url('../img/musica.png') center;
+  background: url('../img/desarrollo-movil.png') center;
   background-size: cover;
   overflow: hidden;
 }
@@ -233,6 +233,7 @@ label{
 .inner-text:hover{
   cursor: pointer;
   box-shadow: -1px 6.5px 15px rgba(208, 211, 214, 0.75);
+  border-radius: 60px;
 }
 
 .ic{
@@ -250,12 +251,14 @@ label{
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1.2px;
+  
 }
 
 .inner-text h5{
   color: #6D85A8;
   letter-spacing: 1.2px;
   text-transform: uppercase;
+  
 }
 
 .inner-text p{
@@ -269,16 +272,20 @@ label{
   min-height: 450px;
 }
 
-.boxy:nth-child(1){
-    width: 50%;
-    min-height: 600px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 30px;
-    background: url('/img/Image03.png') bottom no-repeat;
-    background-size: contain; 
-    position: relative;
-    z-index: 999;
-  }
+.boxy:nth-child(1) {
+  width: 50%;
+  min-height: 600px;
+  border-radius: 60px;
+  
+  background-image: url('../img/Image03.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain; 
+  border-radius: 30px;
+  position: relative;
+  z-index: 999;
+}
+
   .boxy:nth-child(1) img {
     width: 100%;
     height: auto;
@@ -290,13 +297,13 @@ label{
   min-height: 600px;
   display: flex;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 #slider{
   overflow: hidden;
   margin-left: -20px;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 #slider figure ul li{
@@ -304,7 +311,7 @@ label{
   float: left;
   list-style: none;
   text-align: center;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 ul li img{
@@ -380,7 +387,7 @@ ul li p{
 
 .portafolio-item img{
   width: 100%;
-  border-radius: 30px;
+  border-radius: 20px;
   
 }
 
@@ -415,7 +422,7 @@ ul li p{
   transition: all 450ms ease;
   width: calc(100% - 256px);
   transition: all 450ms ease;
-  border-radius: 30px;
+  border-radius: 40px;
 }
 
 .portafolio-item:hover .portafolio-img{
@@ -775,70 +782,32 @@ body {
 }
 
 .square-card {
-    border-radius: 1px; 
-    background-color: #131313c7;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(221, 221, 221, 0.041);
-   
- 
+  border-radius: 0px;
+  background-color: #ffffffc7;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.205);
+  text-align: center;
+  border-radius: 100px;
 }
 
 .square-card-text {
-    color: #0f0f0f;
-    font-size: 14px;
-    line-height: 1.6;
-    display: flex;
-    align-items: center; /* Alinea verticalmente el texto y el ícono */
-    position: relative;
-}
-@media only screen and (max-width: 600px) {
-    .square-card {
-        max-width: 100%; 
-    }
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: 'open Sans', sans-serif;
+  text-align: center; /* Añade esta propiedad para centrar el texto */
+  flex-direction: column;
 }
 
-.menu {
-    display: none;
-}
 
-#toggle:checked + .menu {
-    display: block;
-}
-
-label {
-    display: block;
-    cursor: pointer;
-}
-.icono {
-    width: 40px;
-    height: auto; 
-    margin-right: 10px; 
-}
-icono::before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    animation: circuloAnimado 2s linear infinite; 
-    box-sizing: border-box;
-}
-
-@keyframes circuloAnimado {
-    0% {
-        transform: scale(1);
-        opacity: 0.5;
-    }
-    50% {
-        transform: scale(1.2);
-        opacity: 0.3;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 0.5;
-    }
+/* Estilo del ícono */
+.square-card-text img.icono {
+  width: 90px; /* Ajusta el tamaño del ícono */
+  height: 90px;
+  margin: auto;
 }
 
 
