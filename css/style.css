@@ -113,8 +113,8 @@ label{
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 1; /* Iniciar con opacidad al 100% para la primera imagen */
-  animation: fadeInOut 8s infinite; /* 8s es la duración total de la presentación */
+  opacity: 1; 
+  animation: fadeInOut 8s infinite; 
 }
 
 @keyframes fadeInOut {
@@ -123,7 +123,7 @@ label{
     opacity: 1;
     transform: scale(1);
     background-repeat: no-repeat;
-     /* Escala normal (sin cambios) */
+    
   }
   50%, 75% {
     background: url('../img/opcion-multimedia.png') center;
