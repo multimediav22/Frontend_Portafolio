@@ -94,14 +94,52 @@ label{
   background-color: #FEFFFF;
 }
 
-.photo{
+.photo {
   width: 100%;
-  height: 700px;
+  height: 300px;
+  padding-bottom: 56.25%; /* Relación de aspecto 16:9 (ajusta según tus necesidades) */
   position: relative;
-  background: url('../img/Logo-nuevo-acreditación.png') center;
-  background-size: cover;
   overflow: hidden;
+  background-repeat: no-repeat;
 }
+
+.photo::before {
+  content: "";
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1; /* Iniciar con opacidad al 100% para la primera imagen */
+  animation: fadeInOut 8s infinite; /* 8s es la duración total de la presentación */
+}
+
+@keyframes fadeInOut {
+  0%, 25% {
+    background: url('../img/ux.png') center;
+    opacity: 1;
+    transform: scale(1);
+    background-repeat: no-repeat;
+     /* Escala normal (sin cambios) */
+  }
+  50%, 75% {
+    background: url('../img/opcion-multimedia.png') center;
+    opacity: 1;
+    transform: scale(1.5); 
+    background-repeat: no-repeat;
+  }
+  100% {
+    background: url('../img/integracion.png') center;
+    opacity: 1;
+    transform: scale(1); 
+    background-repeat: no-repeat;
+  }
+}
+
+
 
 .photo-text{
   min-height: 500px;
