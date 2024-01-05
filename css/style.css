@@ -830,14 +830,22 @@ body {
 .square-card-text {
   color: #000000;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.8em; /* Ajusta la altura de línea con unidades em */
   display: flex;
   align-items: center;
   position: relative;
-  font-family: 'open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center; 
   flex-direction: column;
 }
+
+/* Media query para ajustar el espaciado en pantallas más pequeñas si es necesario */
+@media screen and (max-width: 600px) {
+  .square-card-text {
+    line-height: 1.5em; /* Ajusta la altura de línea para pantallas más pequeñas */
+  }
+}
+
 
 
 /* Estilo del ícono */
