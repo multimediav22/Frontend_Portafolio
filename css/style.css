@@ -821,11 +821,10 @@ body {
 
 .square-card {
   border-radius: 0px;
-  background-color: #ffffffc7;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.205);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.048);
   text-align: center;
-  border-radius: 100px;
+  
 }
 
 .square-card-text {
@@ -836,16 +835,76 @@ body {
   align-items: center;
   position: relative;
   font-family: 'open Sans', sans-serif;
-  text-align: center; /* Añade esta propiedad para centrar el texto */
+  text-align: center; 
   flex-direction: column;
 }
 
 
 /* Estilo del ícono */
 .square-card-text img.icono {
-  width: 90px; /* Ajusta el tamaño del ícono */
+  width: 90px; 
   height: 90px;
   margin: auto;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-link {
+  transform: rotate(-15deg);
+  margin: 10px; 
+}
+.square-card-text img.icono {
+  width: 90px; 
+  height: auto;
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+.icono2 {
+  width: 64px;
+  height: 64px;
+  margin: auto;
+  background: url('../img/Nediaj\'s.png') center no-repeat;
+  background-size: cover;
+  animation: fadeInOut2 4s infinite;
+}
+
+.icono2:hover {
+  animation: fadeInOut2 4s infinite;
+}
+
+.icono2.fadeInOut2 {
+  animation: fadeInOut2 4s infinite;
+}
+
+@keyframes fadeInOut2 {
+  0%, 50%, 100% {
+    background-position: center;
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  
+  25% {
+    background: url('../img/instagram.png') center no-repeat;
+    opacity: 1;
+    transform: scale(0.8);
+    background-size: cover;
+    background-size: 64px;
+  }
+
+  75% {
+    background: url('../img/game-development_icon.png') center no-repeat;
+    opacity: 1;
+    transform: scale(0.8);
+    background-size: cover;
+    background-size: 64px;
+  }
 }
 
 
