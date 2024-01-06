@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,43 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portafolio</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="pages/pages.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/leafo/sticky-kit/v1.1.2/jquery.sticky-kit.min.js"></script>
+  <script src="pages/pagesL.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 
-  
+
 </head>
 <body>
 
-<section class="photo" id="inicio">
-  
+<section class="photo" id="inicio">  
     <div class="nav" id="sticker">
-    <label for="toggle">&#9776</label>
+    <label for="toggle">&#9776;</label>
     <input type="checkbox" id="toggle" />
     <div class="menu">
       <h5 class="logo">ingeniero multimedia | Software Developer</h5>
       <a href="#inicio">inicio</a>
-      <a href="#Sobre mí">Sobre mí</a>
+      <a href="#Sobre-mí">Sobre mí</a>
       <a href="#proyectos">proyectos</a>
       <a href="#Experiencia">Experiencia</a>
-      
-      
     </div>
   </div>
-  
     <div class="overlay"></div>
-  </section>
-  <section class="content">
-   
-    <div class="grand-title" id="Sobre mí">
+</section>
+
+<section class="content">
+    <div class="grand-title" id="Sobre-mí">
       <h4 data-ix="slowfade-scroll-bigs">Jairo Vergara Portocarrero</h4>
     </div>
+    <button id="descargarCV">
+      <img src="img/file.png" alt="Icono CV">
+      <img src="img/acrobat.png" alt="Icono CV">
+      <span class="text">Curriculum CV</span>
+     
+    </button>
+    
     <div class="text">
-      <div class="inner-text">
-       
+      <div class="inner-text">       
         <a href="https://www.linkedin.com/in/jairov9209/" target="_blank">
           <img src="img/linkedin_icon.png" alt="Icono" class="icono" />
         </a>
-    
         <i class="ic ion-fork"></i>
         <div class="text-box">
           <h5 data-ix="slowfade-scroll-bigs">Mi perfil</h5>
@@ -50,46 +56,40 @@
         </div>
       </div>
       <div class="inner-text">
-       
-    <a href="https://www.instagram.com/nediajblue/" target="_blank" class="icono2">
-    </a>
+        <a href="https://www.instagram.com/nediajblue/" target="_blank" class="icono2">
+        </a>
         <i class="ic ion-knife"></i>
         <div class="text-box">
           <h5 data-ix="slowfade-scroll-bigs"> Game Developer (UX)</h5>
           <p data-ix="slowfade-scroll-bigs"> Unreal Engine </p>
         </div>
       </div>
-     
-      </div>
-</div>
-<div class="text">
-  <div class="inner-text">
-   
-    <a href="https://github.com/multimediav22" target="_blank">
-      <img src="img/github.png" alt="Icono" class="icono" />
-    </a>
-    <i class="ic ion-fork"></i>
-    <div class="text-box">
-      <h5 data-ix="slowfade-scroll-bigs">Github</h5>
-      <p data-ix="slowfade-scroll-bigs"> Proyectos</p>
     </div>
-  </div>
-</div>
+    <div class="text">
+      <div class="inner-text">   
+        <a href="https://github.com/multimediav22" target="_blank">
+          <img src="img/github.png" alt="Icono" class="icono" />
+        </a>
+        <i class="ic ion-fork"></i>
+        <div class="text-box">
+          <h5 data-ix="slowfade-scroll-bigs">Github</h5>
+          <p data-ix="slowfade-scroll-bigs"> Proyectos</p>
+        </div>
+      </div>
+    </div>
     <div class="square-card">
-      <h2 data-ix="skype" class="square-card-text">    
-      </h2>
-      
+      <h2 data-ix="skype" class="square-card-text"></h2>
       <p data-ix="subtitle-hero-up" class="square-card-text" >Soy graduado en Ingeniería Multimedia de la Universidad Autónoma de Occidente en Cali,
           con sólidas habilidades en diseño, contenidos digitales, informática y sistemas multimedia
           interactivos. Mi pasión por el crecimiento y el aprendizaje me impulsa a utilizar mis
           habilidades como una fuente constante de conocimiento y desarrollo. Estoy emocionado por
           aplicar esta experiencia para contribuir y aportar conocimientos en proyectos innovadores que
           mejoren la experiencia del usuario.</p>
-        </div>
+    </div>
     <div class="text">
       <div class="inner-text">
         <h3 data-ix="slowfade-scroll-bigs">Backend</h3>
-        <img src="img/backend_icon.png" alt="Icono" class="icono  "  />
+        <img src="img/backend_icon.png" alt="Icono" class="icono" />
         <i class="ic ion-fork"></i>
         <div class="text-box">
           <h5 data-ix="slowfade-scroll-bigs">Server-side</h5>
@@ -98,17 +98,14 @@
       </div>
       <div class="inner-text">
         <h3 data-ix="slowfade-scroll-bigs">frontend</h3>
-        <img src="img/frontend.png" alt="Icono" class="icono  "  />
+        <img src="img/frontend.png" alt="Icono" class="icono" />
         <i class="ic ion-knife"></i>
         <div class="text-box">
           <h5 data-ix="slowfade-scroll-bigs"> User Interface (UI)</h5>
           <p data-ix="slowfade-scroll-bigs"> HTML | CSS | BOOTSTRAP 5 | TAILWIND CSS </p>
         </div>
       </div>
-      
-      </div>
     </div>
-  
     <div class="inner-content">
       <div class="boxy"></div>
       <div class="boxy">
@@ -147,30 +144,37 @@
         <section class="portafolio-item">
             <img src="img/perrito.png" alt="" class="portafolio-img" />
             <section class="portafolio-text">
-                <h5>Pets Frontend | HTML | CSS</h5>
+              <i class="fab fa-html5"></i> <!-- Icono de HTML -->
+              <i class="fab fa-css3-alt"></i> <!-- Icono de CSS -->
+                <h5>Pets Frontend | HtMl | CSS </h5>
                 <p>
                    Frontend Store como parte de mi aprendizaje en desarrollo web. Este proyecto, diseñado como una página de entrenamiento, destaca mis habilidades en diseño frontend y sirve como base sólida para mi portafolio como freelancer.</p> 
-                    <a href="https://multimediav22.github.io/Frontend_Pets.app/" target="_blank" rel = "noopener" style="color: rgb(238, 216, 21);" >Visita el sitio</a>
+                    <a href="https://multimediav22.github.io/Frontend_Pets.app/" target="_blank" rel="noopener" style="color: rgb(238, 216, 21);" >Visita el sitio</a>
             </section>
-            
-
-       
         </section>
         <section class="portafolio-item">
             <img src="img/gato.png" alt="" class="portafolio-img" />
           <section class="portafolio-text">
-            <h5>Pets add | Angular | HTML | CSS.</h5>
-            <p>Formulario para agregar mascotas de manera dinamica</p>
-            <a href="https://multimediav22.github.io/AngularBases/" target="_blank" rel = "noopener" style="color: rgb(238, 216, 21);" >Visita el sitio</a>
+            <i class="fab fa-angular"></i>
+            <i class="fab fa-html5"></i> <!-- Icono de HTML -->
+            <i class="fab fa-css3-alt"></i> <!-- Icono de CSS -->
             
+            <h5>Pets add | Angular | HTMl | CSS</h5>
+            <p>Formulario para agregar mascotas de manera dinámica</p>
+            <a href="https://multimediav22.github.io/AngularBases/" target="_blank" rel="noopener" style="color: rgb(238, 216, 21);" >Visita el sitio</a>
           </section>
         </section>
         <section class="portafolio-item">
             <img src="img/dogo-argentino(1).png" alt="" class="portafolio-img" />
           <section class="portafolio-text">
+            <i class="fab fa-postman"></i>
+            <i class="fab fa-angular"></i>
+            <i class="fab fa-typescript"></i>
+
+
             <h5>Pet.app | Gifs | Angular | Postman</h5>
-            <p>Motor de busquedas con gifs dedicado a las mascotas, utilizando GifsServices y postman</p>
-            <a href="https://multimediav22.github.io/Pets.app/" target="_blank" rel = "noopener" style="color: rgb(238, 216, 21);" >Visita el sitio</a>
+            <p>Motor de búsquedas con gifs dedicado a las mascotas, utilizando GifsServices y postman</p>
+            <a href="https://multimediav22.github.io/Pets.app/" target="_blank" rel="noopener" style="color: rgb(238, 216, 21);" >Visita el sitio</a>
           </section>
         </section>
       </div>
@@ -201,8 +205,7 @@
                     <h5>Backend </h5>
                     <p>Udemy Courses</p>
                     <p>
-            Curso: PHP 8, POO, MVC, MySQL, Laravel 8, 
-            
+                        Curso: PHP 8, POO, MVC, MySQL, Laravel 8, 
                     </p>
                     <p>CodeIgniter 4</p>
                     <p>
@@ -217,7 +220,6 @@
                     <p>Udemy Courses</p>
                     <p>
                         <strong>Curso: DISEÑO WEB PROFESIONAL</strong> 
-            
                     </p>
                     <p>HTML5 | CSS | RESPONSIVE | JQUERY </p>
                     <p>FIGMA | SASS | JAVASCRIPT | GITHUB </p>
@@ -227,10 +229,22 @@
                     <p>MONGO | GIT | GITHUB | SERVICIOS </p>
                 </div>
             </div>
-            
-            
-   </section>
+        </section>
+    </div>
   </div>
-  </div>
+  <script>
+    // Función para manejar el desplazamiento suave al hacer clic en los enlaces
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+  
+  
 </body>
 </html>
