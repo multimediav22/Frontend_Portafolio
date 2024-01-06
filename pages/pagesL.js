@@ -31,24 +31,24 @@ $(document).ready(function() {
     }
   });
 
-  // Descargar hoja de vida
+ 
   document.getElementById('descargarCV').addEventListener('click', function(event) {
-    // Evitar el comportamiento predeterminado del enlace
+   
     event.preventDefault();
 
-    // Obtener la ruta del archivo desde el atributo "data-href"
-    var rutaHojaDeVida = "content/Hoja_de_vida_Jairo_Andres_Vergara2024_-_Software9.4N.pdf"; // Reemplaza con la ruta correcta
+ 
+    var rutaHojaDeVida = "content/Hoja_de_vida_Jairo_Andres_Vergara2024_-_Software9.5N.pdf";
 
-    // Crear un enlace temporal (elemento 'a') para descargar el archivo
+   
     var linkDeDescarga = document.createElement('a');
-    linkDeDescarga.href = "content/Hoja_de_vida_Jairo_Andres_Vergara2024_-_Software9.4N.pdf";
-    linkDeDescarga.download = 'Hoja_de_vida_Jairo_Andres_Vergara2024_-_Software9.4N.pdf';
+    linkDeDescarga.href = "content/Hoja_de_vida_Jairo_Andres_Vergara2024_-_Software9.5N.pdf";
+    linkDeDescarga.download = 'Hoja_de_vida_Jairo_Andres_Vergara2024_-_Software9.5N.pdf';
 
-    // Agregar el enlace temporal al documento y hacer clic en él
+  
     document.body.appendChild(linkDeDescarga);
     linkDeDescarga.click();
 
-    // Eliminar el enlace temporal del documento
+    
     document.body.removeChild(linkDeDescarga);
   });
 });
